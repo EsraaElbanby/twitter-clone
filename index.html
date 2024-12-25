@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+
+</head>
+<body class="bg-white dark:bg-dim-900">
+    <div class="container mx-auto h-screen flex xl:max-w-[1200px] xl:px-20">
+
+        <!-- left -->
+        <div class="xl:w-1/5 w-20 flex flex-col xl:pr-4 h-full">
+            <!-- logo -->
+            <a href="#" class="link-active my-2">
+                <i class="fa-brands fa-twitter text-4xl	"></i>
+            </a>
+            <!-- nav -->
+           
+
+             <nav class="mt-5">
+
+
+                <a class=" link-active mb-4">
+                    <i class="fa-solid fa-house text-xl"></i>
+                    <span class="icon">Home</span>
+                </a>
+
+                <a class=" link mb-4">
+                    <i class="fa-solid fa-hashtag text-xl"></i>
+                    <span class="icon">Explore</span>
+                </a>
+
+
+                <a class=" link mb-4">
+                    <i class="fa-solid fa-bell text-xl"></i>
+                    <span class="icon">Notifications</span>
+                </a>
+
+                <a class=" link mb-4">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                    <span class="icon">Messages</span>
+                </a>
+
+                <a class=" link mb-4">
+                    <i class="fa-solid fa-bookmark text-xl"></i>
+                    <span class="icon">Bookmarks</span>
+                </a>
+                
+                
+                <a class=" link mb-4">
+                    <i class="fa-solid fa-list-ul text-xl"></i>
+                    <span class="icon">Lists</span>
+                </a>
+
+                
+                <a class=" link mb-4">
+                    <i class="fa-solid fa-user text-xl"></i>
+                    <span class="icon">Profile</span>
+                </a>
+
+
+                <a class=" link mb-4">
+                    <i class="fa-solid fa-ellipsis text-xl"></i>
+                    <span class="icon">More</span>
+                </a>
+
+                <a class=" w-11 xl:w-full rounded-full h-11 bg-blue-400 mx-auto text-white flex justify-center items-center cursor-pointer hover:bg-blue-600 transition duration-300">
+                    <i class="fa-solid fa-feather text-xl block xl:hidden "></i>
+                    <span class="icon ml-0">Tweet</span>
+                </a>
+
+             </nav>
+
+             <!-- user -->
+              <div class=" flex justify-between items-center mt-auto mx-auto w-14 xl:w-full mb-2 p-2">
+                    <img src="images/profile.png" class="rounded-full w-10 h-10"
+                    />
+                
+                <div class=" hidden xl:block  ">
+                    <h4  class="dark:text-white text-gray-800 text-sm font-bold" >coding</h4>
+                    <p class="dark:text-white text-gray-800 text-sm">@Esraa Elbanby</p>
+                </div>
+
+                <i class="fa-solid fa-chevron-down text-xs hidden xl:flex items-center xl:ml-4  text-gray-800 dark:text-white"></i>
+
+              </div>
+        </div>
+
+        <!-- middle -->
+
+        <div class="xl:w-1/2 w-full h-screen overflow-y-auto ">
+
+            <div class="  flex justify-between items-center sticky top-0 py-3 px-4 border  border-gray-200 bg-white dark:bg-dim-900 dark:border-gray-700 ">
+                <span class="text-gray-800 dark:text-gray-100 font-bold" >Home</span>
+                <i class="fa-brands fa-twitter  text-lg  text-blue-400"></i>
+            </div>
+
+            <!-- tweet area -->
+             <div class="pb-3 border border-gray-200 dark:border-dim-200">
+                 <div class="flex p-4">
+                <img src="images/profile.png" class="w-10 h-10">
+                <textarea placeholder="What's Happening?" class="focus:outline-none w-full bg-transparent ml-2 p-2 text-gray-900 dark:text-white h-16 resize-none"></textarea>
+                </div>
+
+                <div class="flex justify-between  p-4">
+                    <div class="flex">
+                        <a class=" text-blue-400 p-2">
+                            <i class="fa-solid fa-image text-lg cursor-pointer"></i>
+                        </a>
+
+                        <a class=" text-blue-400 p-2">
+                            <i class="fa-brands fa-git text-lg cursor-pointer"></i>
+                        </a>
+                       
+
+                        <a class=" text-blue-400 p-2">
+                            <i class="fa-solid fa-square-poll-horizontal text-lg cursor-pointer"></i>
+                        </a>
+                       
+
+                        <a class=" text-blue-400 p-2">
+                            <i class="fa-solid fa-face-smile text-lg cursor-pointer"></i>
+                        </a>
+
+                        <a class=" text-blue-400 p-2">
+                            <i class="fa-solid fa-business-time  text-lg cursor-pointer"></i>
+                        </a>
+                       
+                       
+                    </div>
+                    <a class="text-white bg-blue-400 rounded-full  px-6 flex items-center font-bold cursor-pointer  hover:bg-blue-600 transition duration-300">Tweet</a>
+
+                </div>
+             </div>
+
+             <!-- show tweets -->
+
+             <div class="py-4 bg-white dark:bg-dim-900 cursor-pointer text-blue-400 text-center border border-gray-200 dark:border-dim-200 text-sm">Show 9 tweets</div>
+
+
+             <!-- tweet -->
+
+             <div class="cursor-pointer border border-gray-200 dark:border-dim-200 pb-4">
+                <div class="p-4 pb-0 flex items-center ">
+                    <img src="images/profile.png" class="w-9 h-9 mr-2">
+                    <p class="ml-1 flex flex-shrink-0 font-medium items-center text-gray-800 dark:text-white ">Coding<span class="text-gray-400 ml-1 text-sm">@Esraa ELbanby . Nov 27</span></p>
+                </div>
+                <div class="pl-8 xl:pl-16 pr-4">
+                    <p class="text-gray-800 dark:text-white font-medium ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br><br>
+                        
+                        Laudantium, eos ab mollitia provident
+
+                    debitis tempore veritatis minima architecto, voluptas deserunt error optio sunt sint.    <br>         
+                       <br>
+                        Impedit qui <a href="#" class="text-blue-400">
+                            #mistake
+                               </a> maiores dolores sapiente consectetur.</p>
+
+                               <img src="images/7115351e918131452803beb9b7d7433c.jpg" class=" rounded-2xl my-3 w-full">
+                               <div class="flex justify-between items-center">
+
+                                <div class="middle-tweet  hover:text-blue-400">
+                                    <i class="fa-solid fa-retweet mr-2 text-lg"></i>
+                                    12.3k
+                                </div>
+                                
+                                <div class="middle-tweet hover:text-green-400">
+                                    <i class="fa-solid fa-comment mr-2 text-lg "></i>
+                                    9.3k
+                                </div>
+
+                                <div class="middle-tweet hover:text-red-600">
+                                    <i class="fa-solid fa-heart mr-2 text-lg"></i>
+                                    11.4k
+                                </div>
+
+                                <div class="middle-tweet  hover:text-blue-400">
+                                    <i class="fa-solid fa-share mr-2 text-lg"></i>
+                                </div>
+
+                               </div>
+                </div>
+             </div>
+
+             <!-- toggler -->
+
+             <div class="py-4 border border-gray-200 dark:border-dim-200 bg-gray-50 dark:bg-dim-300">
+
+                <div class="text-center  p-6  bg-white dark:bg-dim-900 border-t border-b border-gray-200 dark:border-dim-200">
+                    <h3 class="text-gray-900 dark:text-white mb-2 font-bold text-2xl">Customize Your View</h3>
+                    <p class="text-gray-500 mb-3 text-sm">Mange your font size , color and background . these settings effects all the twitter account on this Browser</p>
+
+                    <a  href="javascript:void(0)" onclick="document.querySelector('html').classList.toggle('dark')" class="hover:bg-blue-600 transition duration-300 flex items-center justify-center mx-auto cursor-pointer bg-blue-400 text-white rounded-full py-2 px-4 xl:w-48 w-11 h-11  ">
+                        <!-- Dark light -->
+                    <i class="fa-solid fa-cloud-moon block xl:hidden text-lg"></i>
+                    <span class="hidden xl:block font-bold  ">Toggle Dark Mode</span>
+                    </a>
+                </div>
+
+             </div>
+
+             <!-- spinner -->
+
+             <div class="p-4 border border-gray-200 dark:border-gray-700">
+
+                <svg class="w-8 h-8 mx-auto animate-spin-fast">
+                    <circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="stroke: rgb(29, 161, 242); opacity: 0.2">
+                    </circle>
+                    <circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="
+                            stroke: rgb(29, 161, 242);
+                            stroke-dasharray: 80;
+                            stroke-dashoffset: 60;">
+                    </circle>
+                  </svg>
+                  
+             </div>
+            
+        </div>
+
+        <!-- right -->
+
+        <div class=" hidden xl:block w-[30%] ">
+
+            <!-- search -->
+            <div class=" m-2 relative ">
+                <i class="fa-solid fa-magnifying-glass  text-gray-600 absolute left-4 top-1/2 -translate-y-1/2	"></i>
+                <input class="dark:bg-dim-400 bg-gray-200  focus:outline-none  pl-12 w-full 
+                 border-gray-200 dark:border-gray-400  text-gray-100 font-normal py-3 text-sm rounded-full" type="text" placeholder="Search Twitter">
+            </div>
+
+            <!-- hashtag -->
+            <div class="bg-gray-50 dark:bg-dim-700 m-2 rounded-2xl">
+
+                <h1 class="dark:text-white  text-gray-900  border-b border-gray-200 dark:border-dim-200 p-3 font-bold">What's happening?</h1>
+                
+                <div class="border-b border-gray-200 dark:border-dim-200 p-3 ">
+                    <h4 class="dark:text-white text-gray-800 font-bold">#Palestine</h4>
+                    <p class="text-gray-500 text-xs">52.7K Tweets</p>
+                </div>
+            
+                <div class="border-b border-gray-200 dark:border-dim-200 p-3 ">
+                    <h4 class="dark:text-white text-gray-800 font-bold">#Palestine</h4>
+                    <p class="text-gray-500 text-xs">75.3K Tweets</p>
+                </div>
+                <p class="text-blue-400 cursor-pointer  p-3 ">Show More</p>
+            </div>
+
+            <!-- follow -->
+            <div class="bg-gray-50 dark:bg-dim-700 m-2 rounded-2xl">
+
+                <h1 class="dark:text-white  text-gray-900  border-b border-gray-200 dark:border-dim-200
+                 p-3 font-bold">Who to Follow</h1>
+                
+                 <div class="border-b border-gray-200 dark:border-dim-200 p-5 flex items-center justify-between">
+                    <div class=" flex">
+
+                        <img src="images/profile.png" class="rounded-full w-10 h-10"/>
+                    
+                    <div class=" ml-2 text-sm ">
+                        <h4  class="dark:text-white text-gray-900  font-bold" >Esraa Elbanby</h4>
+                        <p class=" text-gray-400 ">@Esraa Elbanby</p>
+                    </div>
+                  </div>
+                  <a href="#" class="rounded-full bg-transparent text-xs border-2 border-blue-400 py-1 font-bold px-4 flex items-center  text-blue-400">folow</a>
+                </div>
+           
+
+
+
+
+
+                <div class="border-b border-gray-200 dark:border-dim-200 p-5">
+                    <div class=" flex gap-x-4 animate-pulse">
+
+                        <div class="w-10 h-10 rounded-full bg-gray-400"></div>
+                        <div class="flex-1 space-y-2 py-1 ">
+                            <div class="h-4 rounded bg-gray-400 w-3/4"></div>
+                            <div class="h-4 rounded bg-gray-400 w-5/6"></div>
+                            <div class="h-4 rounded bg-gray-400 w-4/6"></div>
+                        </div>
+                        
+                    
+                    <div class=" ml-2 text-sm ">
+                     
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <p class="text-blue-400 cursor-pointer  p-3 ">Show More</p>
+            </div>
+
+        </div>
+
+         
+    </div>
+    
+</body>
+</html>
